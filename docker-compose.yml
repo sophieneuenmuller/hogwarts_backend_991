@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ghcr.io/sophieneuenmuller/examen_aaee_eval3:latest
+    container_name: aaee_hogwarts_app_sfr
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    restart: unless-restarted
